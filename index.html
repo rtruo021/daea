@@ -166,16 +166,16 @@ $(window).on("resize", function () {
 <script>
 
 var map = L.map('map', {
-    center: [47.5668, -52.7120],
+    center: [45.4215, -75.6972],
     zoom: 13,
     layers:[
       L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png'),
-      L.tileLayer('http://warp.worldmap.harvard.edu/maps/tile/4322/{z}/{x}/{y}.png')
+      L.tileLayer('http://warp.worldmap.harvard.edu/maps/tile/4152/{z}/{x}/{y}.png')
     ]
 });
 
             //enter path for .csv here
-            omnivore.csv('sites/aa-sites-popup.csv')
+            omnivore.csv('sites/OttawaDirectoryEntries_BankStreet - Main.csv')
              .on('ready', function(layer) {
        
         this.eachLayer(function(marker) {
